@@ -1,0 +1,151 @@
+header {
+    background-color: rgba(67, 81, 92, 0.861);
+    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 30%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-left: -10px;
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.caja h1 {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+nav a.active {
+    color: white;
+    font-weight: bold;
+}
+
+nav ul {
+    line-height: 40px;
+}
+
+nav a:hover {
+    color: white;
+    font-weight: bold;
+    transform: scale(100px);
+    /* Aumenta el tamaño del elemento en un 5% */
+    transition: transform 0.3s ease;
+    /* Agrega una transición suave de 0.3 segundos */
+}
+
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+    padding-left: 100px;
+}
+
+.productos li {
+    margin-right: 2%;
+    display: inline-block;
+    width: 30%;
+    margin-right: 2%;
+    vertical-align: top;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 0, 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.productos li:hover {
+    border-color: rgb(196, 161, 87);
+}
+
+.productos li:active {
+    border-color: crimson;
+}
+
+.productos li:hover h2 {
+    font-size: 30px;
+}
+
+.productos h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.producto-descripcion {
+    font-size: 17px;
+}
+
+.producto-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.producto-precio::before {
+    content: "$";
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+footer {
+    text-align: center;
+    background-image: url(../IMG/annie-spratt-6a3nqQ1YwBw-unsplash.jpg);
+    margin-top: 80px;
+    height: 340px;
+}
+
+footer img {
+    width: 20%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.copyright {
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}

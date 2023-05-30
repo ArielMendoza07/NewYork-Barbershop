@@ -1,0 +1,125 @@
+ main {
+     width: 940px;
+     margin: 0 auto;
+ }
+ 
+ form {
+     margin: 40px 0;
+ }
+ 
+ form label,
+ form legend {
+     display: block;
+     font-size: 20px;
+     margin: 0px 0px 10px;
+ }
+ 
+ .input-padron {
+     display: block;
+     margin: 0 0 20px;
+     padding: 5px 20px;
+     width: 40%;
+ }
+ 
+ .checkbox {
+     margin-top: 30px;
+     margin-bottom: 50px;
+ }
+ 
+ .boton {
+     display: inline-block;
+     padding: 15px 35px;
+     font-size: 18px;
+     font-weight: bold;
+     text-transform: uppercase;
+     text-align: center;
+     color: #ffffff;
+     background-color: #2C3E50;
+     border: none;
+     border-radius: 50px;
+     transition: background-color 0.3s ease;
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+     cursor: pointer;
+     transition: .5s all;
+ }
+ 
+ .boton:hover {
+     background-color: #1F2B38;
+     transform: scale(1.2);
+ }
+ 
+ .boton:active {
+     background-color: #15202A;
+     transform: translateY(5px);
+     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .boton:focus {
+     outline: none;
+ }
+ 
+ .boton:disabled {
+     opacity: 0.7;
+     cursor: not-allowed;
+ }
+ 
+ .boton::before {
+     content: "";
+     position: absolute;
+     top: -4px;
+     left: -4px;
+     width: calc(100% + 8px);
+     height: calc(100% + 8px);
+     background-color: rgba(0, 0, 0, 0.1);
+     border-radius: 50px;
+     z-index: -1;
+     opacity: 0;
+     transition: opacity 0.3s ease;
+ }
+ 
+ .boton:hover::before {
+     opacity: 1;
+ }
+ 
+ #tabla {
+     position: absolute;
+     top: 90%;
+     /* Mueve el elemento al 50% de la altura del contenedor */
+     left: 80%;
+     /* Mueve el elemento al 50% de la anchura del contenedor */
+     transform: translate(-70%, -50%);
+     /* Centra el elemento */
+ }
+ 
+ table {
+     width: 150%;
+     max-width: 400px;
+     border-collapse: collapse;
+ }
+ 
+ thead {
+     background-color: #2C3E50;
+     color: white;
+     font-weight: bold;
+ }
+ 
+ th,
+ td {
+     padding: 10px;
+     text-align: left;
+     border-bottom: 1px solid #ddd;
+     word-break: break-word;
+ }
+ 
+ tfoot {
+     font-style: italic;
+     color: #666;
+ }
+ 
+ @media (max-width: 480px) {
+     /* Estilos específicos para pantallas más pequeñas */
+     table {
+         font-size: 14px;
+         /* Reduce el tamaño de fuente para que la tabla se ajuste mejor */
+     }
+ }

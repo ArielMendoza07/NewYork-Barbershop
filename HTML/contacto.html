@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../STYLES/reset.css">
+    <link rel="stylesheet" href="../STYLES/contacto.css">
+    <link rel="stylesheet" href="../STYLES/style.css">
+</head>
+
+
+
+<body>
+    <header>
+        <div class="caja">
+            <a href="index.html">
+                <h1><img src="../IMG/logo.png " alt="logo de la barberia New York " class="logo "></h1>
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../HTML/index.html ">Home</a>
+                    </li>
+                    <li>
+                        <a href="../HTML/productos.html ">Productos</a>
+                    </li>
+                    <li>
+                        <a href="../HTML/contacto.html ">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action=" ">
+            <label for="nombre_apellido ">Nombre completo</label>
+            <input type="text " id="nombre_apellido " class="input-padron " required>
+
+            <label for="correo ">Email</label>
+            <input type="email " id="correo " class="input-padron " required placeholder="correo@dominio.com ">
+
+            <label for="telefono ">Teléfono</label>
+            <input type="tel " id="telefono " class="input-padron " required placeholder="(XX) XXXX-XXXX ">
+
+            <label for="mensaje ">Mensaje</label>
+            <textarea id="mensaje " cols="50 " rows="10 " class="input-padron " required></textarea>
+
+            <fieldset>
+                <legend>¿Cómo le gustaría que lo contactemos</legend>
+
+                <label for="radio_email "><input type="radio " name="contacto " value="email " id="radio_email ">Email</label>
+
+
+                <label for="radio_telefono "><input type="radio " name="contacto " value="telefono " id="radio_telefono ">Teléfono</label>
+
+
+                <label for="radio_ws "><input type="radio " name="contacto " value="whatsapp " id="radio_ws " checked>Whatsapp</label>
+
+            </fieldset>
+            <fieldset>
+                <legend class="horario ">¿En qué horario prefiere ser atendido?</legend>
+                <select name=" " id=" ">
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox ">¿Quiere recibir novedades personalizadas?<input type="checkbox " checked></label>
+            <button class="boton " type="submit "> OK </button>
+        </form>
+        <div id="tabla ">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario de Apertura</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>9:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>9:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>9:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>9:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>9:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>10:00 AM - 4:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>Cerrado</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2 ">Horarios sujetos a cambios. </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+    </main>
+    <footer>
+        <img src="../IMG/logo.png " alt="footer-alura ">
+        <p class="copyright "> © Todos los derechos reservados - 2023</p>
+    </footer>
+</body>
+
+</html>
